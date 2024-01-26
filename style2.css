@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #2dc653;
+    --secondary-color: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+    height: 130px;
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 6vw;
+    position: fixed;
+    z-index: 99;
+}
+
+.logo h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+.logo h3:hover {
+    cursor: pointer;
+}
+
+.innerNav {
+    display: flex;
+    gap: 8vw;
+}
+
+.innerNav h4 {
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.innerNav h4 a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color .3s ease-in-out;
+}
+
+.innerNav i {
+    position: absolute;
+    padding: 4px 6px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.innerNav h4 a:hover i {
+    padding: 2px 6px;
+    transform: rotate(180deg);
+}
+
+
+.categories {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    height: 60vh;
+    width: 60vw;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    gap: 30px;
+    z-index: 99;
+    display: none;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+
+.categories ul li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 30px;
+}
+
+.categories ul li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.categories ul li a:hover {
+    cursor: pointer;
+}
+
+.account button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0px 10px;
+}
+
+.account button:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.account button:hover {
+    cursor: pointer;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+}
+
+#main {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.about {
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    text-align: start;
+    margin: 10px 60px;
+}
+
+.about h1 {
+    align-self: center;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.about p {
+    font-size: 20px;
+    color: black;
+}
+.about h4{
+    margin: 26px 0px 0px 0px;
+    font-size: 30px;
+}
+.about ul{
+    margin: 20px 0px;
+}
+.about ul li{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.left{
+    position: absolute;
+    top: 150px;
+    height: 80vh;
+    border-right: 2px solid black;
+    width: 250px;
+}
+.left ul{
+    margin: 10px 50px;
+}
+.left ul li{
+    list-style: none;
+    margin: 4px 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.left ul li:hover{
+    color: var(--primary-color);
+}
+.right{
+    width: calc(100vw - 250px) ;
+    height: 80vh;
+    background-color: aquamarine;
+    position: absolute;
+    top: 150px;
+    left: 13%;
+    padding: 20px 50px;
+}
